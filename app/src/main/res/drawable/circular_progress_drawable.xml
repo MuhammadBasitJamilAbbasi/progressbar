@@ -1,0 +1,19 @@
+<!-- res/drawable/circular_progress_drawable.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background ring -->
+    <item>
+        <shape android:shape="ring" android:innerRadiusRatio="2.5" android:thicknessRatio="15" android:useLevel="false">
+            <solid android:color="#d3d3d3"/> <!-- Color for the background circle -->
+        </shape>
+    </item>
+    <!-- Progress ring -->
+    <item>
+        <rotate
+            android:fromDegrees="270"
+            android:toDegrees="270">
+            <shape android:shape="ring" android:innerRadiusRatio="2.5" android:thicknessRatio="15" android:useLevel="true">
+                <solid android:color="#4CAF50"/> <!-- Color for the progress -->
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
